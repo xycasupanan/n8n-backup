@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict A0al9GyZhiLckPLxK75UkLh0kfvMBCP5jN6dDJyFpuqU0H3YvSLwxLrDZVgSho6
+-- \restrict zZVQObpBQEydQHdxDTaZvQemXoUwyt9W6NZLCHSBNZ5aZMB44wB9PM7ozBKdWe6
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -181,7 +181,7 @@ workflow:editor	Workflow Editor	Workflow Editor	workflow	t	2025-10-08 08:01:43.1
 --
 
 COPY "public"."user" ("id", "email", "firstName", "lastName", "password", "personalizationAnswers", "createdAt", "updatedAt", "settings", "disabled", "mfaEnabled", "mfaSecret", "mfaRecoveryCodes", "lastActiveAt", "roleSlug") FROM stdin;
-b597360e-99f4-421f-ac79-0d44ac821e04	cris.xyrus@gmail.com	Cris Xyrus	Casupanan	$2a$10$xnR5qAuApjuiX6izHAM/SOmgxHdMIvCMpcdvfg9quOMTcGUv900Pa	{"version":"v4","personalization_survey_submitted_at":"2025-10-08T08:06:02.762Z","personalization_survey_n8n_version":"1.114.3","automationGoalDevops":["ci-cd","cloud-infrastructure-orchestration"],"companySize":"personalUser","companyType":"saas","role":"devops","reportedSource":"youtube"}	2025-10-08 07:57:03.549+00	2025-10-10 05:13:16.535+00	{"userActivated": false}	f	f	\N	\N	2025-10-10	global:owner
+b597360e-99f4-421f-ac79-0d44ac821e04	cris.xyrus@gmail.com	Cris Xyrus	Casupanan	$2a$10$xnR5qAuApjuiX6izHAM/SOmgxHdMIvCMpcdvfg9quOMTcGUv900Pa	{"version":"v4","personalization_survey_submitted_at":"2025-10-08T08:06:02.762Z","personalization_survey_n8n_version":"1.114.3","automationGoalDevops":["ci-cd","cloud-infrastructure-orchestration"],"companySize":"personalUser","companyType":"saas","role":"devops","reportedSource":"youtube"}	2025-10-08 07:57:03.549+00	2025-10-13 15:23:38.752+00	{"userActivated": false}	f	f	\N	\N	2025-10-13	global:owner
 \.
 
 
@@ -1171,6 +1171,6 @@ SELECT pg_catalog.setval('"public"."migrations_id_seq"', 99, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict A0al9GyZhiLckPLxK75UkLh0kfvMBCP5jN6dDJyFpuqU0H3YvSLwxLrDZVgSho6
+-- \unrestrict zZVQObpBQEydQHdxDTaZvQemXoUwyt9W6NZLCHSBNZ5aZMB44wB9PM7ozBKdWe6
 
 RESET ALL;
