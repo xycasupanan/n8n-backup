@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict 166VeCH3zK3pgBo0NjFvNeHf53iJuCj08gup80bf6fQZ3tidlxsHm2ybAG901kd
+-- \restrict KeOlx1vIppci5fEFLsvcj4EJutJWfGpVT1jl1EfDAqfjOBCahTMJxLlrp11ai59
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -73,7 +73,7 @@ COPY "auth"."oauth_clients" ("id", "client_secret_hash", "registration_type", "r
 -- Data for Name: sessions; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."sessions" ("id", "user_id", "created_at", "updated_at", "factor_id", "aal", "not_after", "refreshed_at", "user_agent", "ip", "tag", "oauth_client_id") FROM stdin;
+COPY "auth"."sessions" ("id", "user_id", "created_at", "updated_at", "factor_id", "aal", "not_after", "refreshed_at", "user_agent", "ip", "tag", "oauth_client_id", "refresh_token_hmac_key", "refresh_token_counter") FROM stdin;
 \.
 
 
@@ -89,7 +89,7 @@ COPY "auth"."mfa_amr_claims" ("session_id", "created_at", "updated_at", "authent
 -- Data for Name: mfa_factors; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
 --
 
-COPY "auth"."mfa_factors" ("id", "user_id", "friendly_name", "factor_type", "status", "created_at", "updated_at", "secret", "phone", "last_challenged_at", "web_authn_credential", "web_authn_aaguid") FROM stdin;
+COPY "auth"."mfa_factors" ("id", "user_id", "friendly_name", "factor_type", "status", "created_at", "updated_at", "secret", "phone", "last_challenged_at", "web_authn_credential", "web_authn_aaguid", "last_webauthn_challenge_data") FROM stdin;
 \.
 
 
@@ -1195,6 +1195,6 @@ SELECT pg_catalog.setval('"public"."migrations_id_seq"', 99, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict 166VeCH3zK3pgBo0NjFvNeHf53iJuCj08gup80bf6fQZ3tidlxsHm2ybAG901kd
+-- \unrestrict KeOlx1vIppci5fEFLsvcj4EJutJWfGpVT1jl1EfDAqfjOBCahTMJxLlrp11ai59
 
 RESET ALL;
